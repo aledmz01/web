@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matricula</title>
+</head>
+<body >
+<center>
+    <table>
+        <img src="primerfta.png" alt="Logos" width="1300"  height="100">
+        
+        <h1 style="color: #b126f2; font-family: 'Arial'"><b>HOJA DE MATRÍCULA 2024</b></h1>
+
+        <input type="radio" name="ingreso" value="nuevo" style="font-family: Arial;"> <span style="font-family: Arial; font-weight: bold;">NUEVO INGRESO</span> &emsp;&emsp;&emsp;
+        <input type="radio" name="ingreso" value="antiguo" style="font-family: Arial;"> <span style="font-family: Arial; font-weight: bold;">ANTIGUO INGRESO</span>
+
+        <br>
+        <tr style="font-family: Arial">
+        <td><b > Fecha inscripcion:</b>&emsp;<input type="date" placeholder="dd/mm/aaaa">&emsp;&emsp;&emsp; </td>
+        &emsp;&emsp;&emsp;<td> <b>Fecha matricula:</b>&emsp;<input type="date" placeholder="dd/mm/aaaa"></td>
+        </tr>
+    </table>
+
+
+    <table border="1" <fieldset style="font-family: Arial; border: 1px solid black;">
+        <legend align="left" style="font-family: Arial"><b>&emsp;1. DATOS GENERALES</b></legend>  
+    
+        <tr>
+            <td> <center>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;NIVEL EDUCATIVO EN EL&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>&emsp;&emsp;&emsp;&emsp;&emsp; QUE DESEA INGRESAR&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</center></td>
+            <td>
+                &emsp; <input type="radio" name="bachillerato" value="primer"> <span style="margin-top: 10px; display: inline-block;">Primer año bachillerato&emsp;&emsp;</span><br> 
+                &emsp; <input type="radio" name="bachillerato" value="segundo"> <span>Segundo año bachillerato&emsp;&emsp;</span><br>
+                &emsp; <input type="radio" name="bachillerato" value="tercer"> <span style="margin-bottom: 10px; display: inline-block;">Tercer año bachillerato&emsp;&emsp;</span> 
+            </td>.
+            <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+        </tr>
+
+        <tr>
+            <td><center>OPCION:</center> </td>
+            <td>  
+                &emsp;<input type="radio" name="opcion" value="general"> <span style="margin-top: 10px; display: inline-block;">General</span><br> 
+                &emsp;<input type="radio" name="opcion" value="tecAC"> <span>Técnico Vocacional Administrativo Contable&emsp;&emsp;</span><br>
+                &emsp;<input type="radio" name="opcion" value="tecDS"> <span>Técnico Vocacional en Desarrollo de Software&emsp;&emsp;</span><br>
+                &emsp;<input type="radio" name="opcion" value="tecAPS"> <span style="margin-bottom: 10px; display: inline-block;">Técnico Vocacional en Atención Primaria en Salud&emsp;&emsp;&emsp;</span>
+          </td>
+          <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+        </tr>
+        
+    </table>
+</center>
+
+    <br>
+    <form>
+        <fieldset style="font-family: Arial; border: 2px solid black;">
+            <legend style="color: rgb(40, 206, 40);"><b>FOTO DEL ESTUDIANTE</b></legend>
+            <label for="foto">Selecciona una imagen:</label>
+            <input type="file" id="foto" name="foto" accept="image/*" style="margin-top: 10px;">
+        </fieldset>
+    </form>
+    <br>
+    <form>
+        <fieldset style="font-family: Arial; border: 2px solid black;">
+            <legend style="color: rgb(40, 206, 40);"><b>2. DATOS PERSONALES DEL ESTUDIANTE</b></legend>   
+            <br>
+            <label>2.1. NIE:</label>
+            <input type="number" placeholder="Numeros sin espacios">
+
+            &emsp;&emsp;&emsp;<label>Carné de minoridad Nº:</label>
+            <input type="number" placeholder="Numeros sin espacios">
+
+            &emsp;&emsp;&emsp;<label>DUI del Estudiante. N°</label>
+            <input type="number" placeholder="Numeros sin espacios">
+            <br>
+            <br>
+            <label>2.2. Apellidos del estudiante&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Nombres del estudiante</label>
+            <br>
+            <br>
+            &emsp;&emsp;<input type="text" placeholder="Escriba el apellido">&emsp;&emsp;&emsp;&emsp;
+            <input type="text" placeholder="Escriba el apellido">&emsp;&emsp;&emsp;&emsp;
+            <input type="text" placeholder="Escriba el nombre">&emsp;&emsp;&emsp;&emsp;
+            <input type="text" placeholder="Escriba el nombre"><br>
+
+            &emsp;&emsp;&emsp;&emsp;<label>Primer Apellido</label>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label>Segundo Apellido</label>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label>Primer Nombre</label>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label>Segundo Nombre</label><br>
+
+            <br>
+            <label>2.3. Lugar y fecha de Nacimiento:</label>
+            &emsp;
+            <input type="text" placeholder="Municipio de asentamiento">
+            <input type="date" placeholder="dd/mm/aaaa"
+        
+            <label>&emsp;&emsp;&emsp;&emsp;Edad:</label>
+            <input type="number" placeholder="Numeros sin espacios">
+            <label>Años</label>
+            <br>
+            <br>
+            <label>2.4. Género:&emsp;&emsp;</label>
+            <input type="radio" name="genero" value="masculino"> <span>Masculino&emsp;&emsp;</span>
+            <input type="radio" name="genero" value="femenino"> <span>Femenino&emsp;&emsp;</span>
+            <br>
+            <br>
+            <label>2.5. Distancia en (km.) de la casa a la Institución:</label>
+            <input type="number" placeholder="Numeros sin espacios"> 
+            &emsp;&emsp;<label>Estado Civil:</label>&emsp;
+            <input type="radio" name="estado" value="soltero"> <span>Soltero&emsp;</span>
+            <input type="radio" name="estado" value="casado"> <span>Casado&emsp;</span>
+            <input type="radio" name="estado" value="divorciado"> <span>Divorciado&emsp;</span>
+            <input type="radio" name="estado" value="viudo"> <span>Viudo&emsp;</span>
+            </fieldset>
+    </form>
+<br>
+<form>
+    <fieldset style="font-family: Arial; border: 2px solid black;">
+        <legend style="color: rgb(40, 206, 40);"><b>3. DATOS DE RESIDENCIA</b></legend>   
+        <label>3.1. Dirección donde reside actualmente:</label><br>
+<br>
+&emsp;&emsp; <input type="text" placeholder="Escriba">&emsp;&emsp;&emsp;&emsp;&emsp;
+        <input type="text" placeholder="Escriba ">&emsp;&emsp;&emsp;&emsp;&emsp;
+        <input type="text" placeholder="Escriba ">&emsp;&emsp;&emsp;&emsp;&emsp;
+        <input type="text" placeholder="Escriba ">&emsp;&emsp;&emsp;&emsp;&emsp;
+        <input type="text" placeholder="Escriba ">&emsp;&emsp;&emsp;
+        
+
+        
+<label >Cantón / Caserío / Colonia&emsp;&emsp;&emsp;
+    &emsp;&emsp;calle / avenida&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        Pasaje/Block&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        polígono&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        Casa Nº&emsp;&emsp;&emsp;
+        <br>
+        <br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="text" placeholder="Escriba ">&emsp;&emsp;&emsp;&emsp;&emsp;
+        <input type="text" placeholder="Escriba ">&emsp;&emsp;&emsp;&emsp;&emsp;
+        <br>
+        
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Municipio&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        Departamento</label>
+        <br>
+  
+        <br><label>3.2. Teléfono Fijo de casa:</label>
+        <input type="number" placeholder="Numeros sin espacios">
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <label>3.3. Repite año:</label>
+        &emsp;<input type="radio" name="yesNoo" value="Repite"> <span>Si&emsp;</span>
+        <input type="radio" name="yesNoo" value="Repite"> <span>No&emsp;</span><br><br>
+
+        <label>3.4. En qué año cursó su último grado de estudios:</label>
+        <input type="number" placeholder="Numeros sin espacios">
+        &emsp;&emsp;&emsp;&emsp;<label>3.5. Estudió Parvularia:</label>
+        &emsp;<input type="radio" name="yeesNoo" value="Parvularia"> <span>Si&emsp;</span>
+        <input type="radio" name="yeesNoo" value="Parvularia"> <span>No&emsp;</span><br><br>
+
+        <label>3.6. Medio de transporte que utilizará de la casa hacia la institución:</label>&emsp;
+        <input type="checkbox" value="transporte"> <span>Propio&emsp;</span>
+        <input type="checkbox" value="transporte"> <span>Familiar&emsp;</span>
+        <input type="checkbox" value="transporte"> <span>Escolar&emsp;</span>
+        <input type="checkbox" value="transporte"> <span>Público&emsp;</span>
+        <input type="checkbox" value="transporte"> <span>Peatonal&emsp;</span>
+        <input type="checkbox" value="transporte"> <span>Otro&emsp;</span><br><br>
+
+        <label>3.7. El estudiante se trasladará a la Institución de estudios:</label>
+        &emsp;&emsp;<span>Solo</span>
+        <input type="radio" name="yessNoo" value="trasladará">
+        &emsp;&emsp;
+        <span>lo vendrá a dejar y a traer el encargado </span>
+        <input type="radio" name="yessNoo" value="trasladará"><br><br>
+        <label>3.8. Nombre del Colegio, Centro o Institución Educativa de Procedencia:</label>
+        <input type="text" placeholder="Escriba el nombre"><br>
+    </fieldset>
+</form>
+
+</form>
+<br>
+<form>
+    <fieldset style="font-family: Arial; border: 2px solid black;">
+        <legend style="color: rgb(40, 206, 40);"><b>4. DATOS SOBRE SITUACIÓN FAMILIAR</b></legend>  
+        
+        <label>4.1. NÚMERO DE MIEMBROS QUE HABITAN LA CASA DONDE VIVE EL ESTUDIANTE:</label>
+        <input type="number" placeholder="Numeros sin espacios"><br><br>
+
+        <label>El estudiante trabaja:</label>
+        &emsp;<input type="radio" name="yesNo" value="trabaja"> <span>Si&emsp;</span>
+        <input type="radio" name="yesNo" value="trabaja"> <span>No&emsp;</span>
+        &emsp;&emsp;<label>¿Dónde?</label>
+        <textarea></textarea><br><br>
+
+        <label>El estudiante tiene hijos(as):</label>
+        &emsp;<input type="radio" name="yeesNo" value="hijos"> <span>Si&emsp;</span>
+        <input type="radio" name="yeesNo" value="hijos"> <span>No&emsp;</span>
+        &emsp;&emsp;<label>¿Cuántos?</label>
+        <textarea></textarea><br><br>
+
+        <label>4.2. EL ESTUDIANTE VIVE CON:</label><br><br>
+        <input type="radio" name="vive" value="madre"> <span>Solo Madre</span>&emsp;&emsp;&emsp;&emsp;
+        <input type="radio" name="vive" value="padre"> <span>Solo Padre</span>&emsp;&emsp;&emsp;&emsp;
+        <input type="radio" name="vive" value="ambos"> <span>Ambos Padres</span>&emsp;&emsp;&emsp;&emsp;
+        <label>Otros Especifique:</label>
+        <input type="text" placeholder=""><br><br>
+
+
+        <label>4.3. DE QUIÉN DEPENDE ECONOMICAMENTE EL ESTUDIANTE:</label><br><br>
+        <input type="radio" name="depende" value="madre"> <span>Solo Madre</span>&emsp;&emsp;&emsp;&emsp;
+        <input type="radio" name="depende" value="padre"> <span>Solo Padre</span>&emsp;&emsp;&emsp;&emsp;
+        <input type="radio" name="depende" value="ambos"> <span>Ambos Padres</span>&emsp;&emsp;&emsp;&emsp;
+        <label>Otros Especifique:</label>
+        <input type="text" placeholder=""><br><br>
+
+    </fieldset>
+</form>
+
+</form>
+<br>
+<form>
+    <fieldset style="font-family: Arial; border: 2px solid black;">
+        <legend style="color: rgb(40, 206, 40);"><b>5. OTROS.</b></legend>   
+        <label>5.1 Correo de Google Classroom:</label>
+        <input type="number" placeholder="Numeros sin espacios">
+        <label>@clases.edu.sv</label><br><br>
+        <label>5.2. Teléfono Celular del estudiante:</label>
+        <input type="tel" placeholder="Numeros sin espacios"><br><br>
+        <label>5.3. ¡Ha recibido el estudiante computadora Laptop del Gobierno? (MINEDUCYT)</label>
+        &emsp;<input type="radio" name="yesNo" value="soltero"> <span>Si&emsp;</span>
+        <input type="radio" name="yesNo" value="casado"> <span>No&emsp;</span>
+        
+        &emsp;&emsp;<label>Marca:</label>
+        <select name="marca" id="">
+            <option value="0"> Selecciona </option>
+            <option value="1">DELL</option>
+            <option value="2">hp</option>
+            <option value="3">acer</option>
+        </select>
+        &emsp;&emsp;<label>Serie:</label>
+        <input type="number" placeholder="">
+
+    </fieldset>
+</form>
+
+</form>
+<br>
+<form>
+    <fieldset style="font-family: Arial; border: 2px solid black;">
+        <legend style="color: rgb(40, 206, 40);"><b>6. APELLIDOS Y NOMBRES DEL PADRE</b></legend><br>
+        &emsp;&emsp;&emsp;&emsp;<input type="text" placeholder="Escriba el apellido">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="text" placeholder="Escriba el apellido">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="text" placeholder="Escriba el nombre">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="text" placeholder="Escriba el nombre"><br>
+
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label>Primer Apellido</label>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label>Segundo Apellido</label>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label>Primer Nombre</label>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label>Segundo Nombre</label><br><br>
+            <label>Profesión u oficio:</label>
+            <input type="text" placeholder="">
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <label>DUI:</label>
+            <input type="number" placeholder=""><br><br>
+            <label>Nombre de la empresa donde Trabaja:</label>
+            <textarea></textarea>&emsp;&emsp;&emsp;&emsp;
+            <label>Tel. celular:</label>
+            <input type="number" placeholder="Numeros sin espacios"><br><br>
+            
+            <table border="1" style="font-family: Arial" >
+                <tr>
+                    <td>&emsp;&emsp;Vive en la misma casa con nosotros&emsp;&emsp;</td>
+                    <td>&emsp;&emsp;<input type="radio" name="vive" value="misma">&emsp;&emsp;</td>
+                    <td>&emsp;&emsp;Vive con otra familia&emsp;&emsp;</td>
+                    <td>&emsp;&emsp;<input type="radio" name="vive" value="otra">&emsp;&emsp;</td>
+                    <td>&emsp;&emsp;&emsp;Está fuera del país&emsp;&emsp;&emsp;</td>
+                    <td>&emsp;&emsp;<input type="radio" name="vive" value="fuera">&emsp;&emsp;</td>
+                    <td>&emsp;&emsp;Ya Falleció&emsp;&emsp;</td>
+                    <td>&emsp;&emsp;<input type="radio" name="vive" value="murio">&emsp;&emsp;</td>
+                </tr>
+            </table>
+        
+    </fieldset>
+</form>
+
+
+</form>
+<br>
+<form>
+    <fieldset style="font-family: Arial; border: 2px solid black;">
+        <legend style="color: rgb(40, 206, 40);"><b>7. APELLIDOS Y NOMBRES DE LA MADRE</b></legend>  <br>
+        &emsp;&emsp;&emsp;&emsp;<input type="text" placeholder="Escriba el apellido">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="text" placeholder="Escriba el apellido">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="text" placeholder="Escriba el nombre">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="text" placeholder="Escriba el nombre"><br>
+
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label>Primer Apellido</label>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label>Segundo Apellido</label>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label>Primer Nombre</label>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label>Segundo Nombre</label><br><br>
+            <label>Profesión u oficio:</label>
+            <input type="text" placeholder="">
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <label>DUI:</label>
+            <input type="number" placeholder=""><br><br>
+            <label>Nombre de la empresa donde Trabaja:</label>
+            <textarea></textarea>&emsp;&emsp;&emsp;&emsp;
+            <label>Tel. celular:</label>
+            <input type="number" placeholder="Numeros sin espacios"><br><br>
+            
+            <table border="1" style="font-family: Arial" >
+                <tr>
+                    <td>&emsp;&emsp;Vive en la misma casa con nosotros&emsp;&emsp;</td>
+                    <td>&emsp;&emsp;<input type="radio" name="vive" value="misma">&emsp;&emsp;</td>
+                    <td>&emsp;&emsp;Vive con otra familia&emsp;&emsp;</td>
+                    <td>&emsp;&emsp;<input type="radio" name="vive" value="otra">&emsp;&emsp;</td>
+                    <td>&emsp;&emsp;&emsp;Está fuera del país&emsp;&emsp;&emsp;</td>
+                    <td>&emsp;&emsp;<input type="radio" name="vive" value="fuera">&emsp;&emsp;</td>
+                    <td>&emsp;&emsp;Ya Falleció&emsp;&emsp;</td>
+                    <td>&emsp;&emsp;<input type="radio" name="vive" value="murio">&emsp;&emsp;</td>
+                </tr>
+            </table>
+ 
+    </fieldset>
+</form>
+
+
+</form>
+<br>
+<form>
+    <fieldset style="font-family: Arial; border: 2px solid black;">
+        <legend style="color: rgb(40, 206, 40);"><b>8. APELLIDOS Y NOMBRES DEL RESPONSABLE PARA RETIRAR DOCUMENTACIÓN EXCLUSIVAMENTE.</b></legend><br>   
+        &emsp;&emsp;&emsp;&emsp;<input type="text" placeholder="Escriba el apellido">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="text" placeholder="Escriba el apellido">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="text" placeholder="Escriba el nombre">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="text" placeholder="Escriba el nombre"><br>
+
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label>Primer Apellido</label>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label>Segundo Apellido</label>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label>Primer Nombre</label>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label>Segundo Nombre</label><br><br>
+            <label>Profesión u oficio:</label>
+            <input type="text" placeholder="">
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <label>DUI:</label>
+            <input type="number" placeholder=""><br><br>
+            <label>Nombre de la empresa donde Trabaja:</label>
+            <textarea></textarea>&emsp;&emsp;&emsp;&emsp;
+            <label>Tel. celular:</label>
+            <input type="number" placeholder="Numeros sin espacios"><br><br>
+            
+            <table border="1" style="font-family: Arial" >
+                <tr>
+                    <td>&emsp;&emsp;Vive en la misma casa con nosotros&emsp;&emsp;</td>
+                    <td>&emsp;&emsp;<input type="radio" name="vive" value="misma">&emsp;&emsp;</td>
+                    <td>&emsp;&emsp;Vive con otra familia&emsp;&emsp;</td>
+                    <td>&emsp;&emsp;<input type="radio" name="vive" value="otra">&emsp;&emsp;</td>
+                    <td>&emsp;&emsp;&emsp;Está fuera del país&emsp;&emsp;&emsp;</td>
+                    <td>&emsp;&emsp;<input type="radio" name="vive" value="fuera">&emsp;&emsp;</td>
+                    <td>&emsp;&emsp;Ya Falleció&emsp;&emsp;</td>
+                    <td>&emsp;&emsp;<input type="radio" name="vive" value="murio">&emsp;&emsp;</td>
+                </tr>
+            </table>
+            <br>
+        <label>PARENTESCO CON EL ESTUDIANTE DEL RESPONSABLE:</label>
+        <input type="text" placeholder="Escriba el parentesco">
+    </fieldset>
+</form>
+
+</form>
+<br>
+<form>
+    <fieldset style="font-family: Arial; border: 2px solid black;">
+        <legend style="color: rgb(40, 206, 40);"><b>9. DATOS DE SALUD DEL (LA) ESTUDIANTE</b></legend><br>
+        <label>9.1. Si el estudiante padece alguna enfermedad o alérgia escríbala:</label>
+        <input type="text" placeholder="Escriba la enfermedad">
+        <br>
+        <br>
+        <label>9.2. Si el estudiante tiene Prescritos medicamentos de carácter permanente escríbalos:</label>
+        <textarea></textarea><br>
+      <br>  
+        <label>9.3. En caso de emergencia llamar a Nombre de:</label>
+        <input type="text" placeholder="Escriba el nombre">
+        &emsp;&emsp;<label>Teléfono:</label>
+        <input type="tel" placeholder="Numeros sin espacios">
+
+
+    </fieldset>
+</form>
+
+
+</form>
+<br>
+<form>
+    <fieldset style="font-family: Arial; border: 2px solid black;">
+        <legend style="color: red;"><b>10. OBSERVACIONES DE ESTRICTO CUMPLIMIENTO PARA REGISTRO ACADÉMICO</b></legend>  
+        <label><b>En caso que el estudiante se retire de la Institución, la documentación únicamente la podrá retirar, la persona que ha quedado asignada como responsable en la Hoja de Matrícula del año en curso; no se le podrá entregar ni al estudiante ni a ninguna otra persona más, aunque sea su padre o su madre.</b></label> 
+    </fieldset>
+</form>
+<br>
+<div style="text-align: center;">
+    <label>“El éxito es fácil de obtener, lo difícil es merecerlo”</label>
+    <label style="color: red; margin-top: 10px; display: inline-block;">(Albert Camus)</label>
+
+
+<hr style=" border-top: 3px solid black; border-bottom: 3px solid black; margin: 5px 0;">
+
+<label>Calle a San Antonio Abad, Nº 1467 San Salvador. Telefax 2225 – 0710</label>
+</div>
+
+<!-- aquiiii -->
+<nav>
+    <br>  
+    <br>
+        <a href="index.html">Volver al Menú Principal</a>
+    </br>    
+    </br>
+    </nav>
+    
+</body>
+</html>

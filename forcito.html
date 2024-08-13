@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructuras re</title>
+</head>
+<body bgcolor="pink">
+    <h1>Imprimiendo el contenido de un arreglo</h1>
+
+<script>
+    let opciones, arreglo, edadPromedio, conteo;
+    var edades=[10,18,60,27]
+                var suma=0, promedio=0;
+                var mayor=0, menor=0;
+
+    //document.write("Menu de opciones: \n");
+    opciones=parseInt(prompt("Ingrese: \n 1 para imprimir el arreglo \n 2 para imprimir la edad promedio \n 3 para visualizar el conteo "));
+    while(opciones<1 || opciones>3)
+    {
+        opciones=parseInt(prompt("Ingrese: \n 1 para imprimir el arreglo \n 2 para imprimir la edad promedio \n 3 para visualizar el conteo "));
+    }
+
+    //procesos
+    switch(opciones)
+        {
+            case 1: 
+            {
+                document.write("Imprimiendo el contenido del arreglo", "<br>");
+                for (let index = 0; index < edades.length; index++) {
+                  
+                    document.writeln(edades[index],"-");
+                }
+                break;
+            }
+
+            case 2: 
+            {
+                document.write("Imprimiendo el contenido del promedio", "<br>");
+                for (let index = 0; index < edades.length; index++) {
+
+                suma=suma+edades[index];                        
+                                                                    }
+                promedio=suma/edades.length;
+               // length devuelve el tamaño del arreglo
+                document.write("La edad promedio es ",promedio.toFixed(2));
+
+                break;
+            }
+
+            default: 
+            {
+                
+                document.write("Imprimiendo el contenido del conteo", "<br>");
+                for (let index = 0; index < edades.length; index++) {
+                if(edades[index]>=18)
+                {
+                    mayor++
+                }
+                else{
+                    menor++;
+                }  
+                }
+   //fin for
+                document.write("La cantidad de edades menores a 18 son ", menor, "<br>");
+                document.write("La cantidad de edades mayores a 18 son ", mayor, "<br>");
+                break;
+            }
+
+        }
+
+
+</script>
+
+    <!-- aquiiii -->
+    <nav>
+        <br>  
+        <br>
+            <a href="index.html">Volver al Menú Principal</a>
+        </br>    
+        </br>
+        </nav>
+
+</body>
+</html>

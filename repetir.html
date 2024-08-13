@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajando vectores no inicializados</title>
+    <h1>Trabajando vectores no inicializados</h1>
+</head>
+<body bgcolor="pink">
+  <script>
+var salario=new Array(5);
+var aumento=new Array(5);
+var aumento2=new Array(5);
+//llenar el vector q c llama salario
+var x=0;//inicializando
+
+while(x < salario.length)// comprobando
+{
+salario[x]=parseFloat(prompt("Ingrese el salario"));
+
+if (salario [x]>=365){
+
+        aumento[x]=salario[x]*3;
+        aumento2[x]=salario[x]*1.35;
+
+        x++; // actualizado
+    }
+    else if (salario [x] < 365){
+      alert("No e pueden ingresar salarios menores a 365");  
+    }
+}//fin while
+
+//mostrando el contenido (despues del while)
+
+var j=0;//inicializzzr
+document.write("____________________________________________________________________________<br><br>");
+document.write("   SALARIO  ------------------------  AUMENTO  ------------------------  AUMENTO 35%<br>");
+document.write("____________________________________________________________________________<br><br>");
+while(j<salario.length)
+{
+document.write(salario[j]+"   ---------------------------------------------   "+aumento[j].toFixed(2)+ "   ---------------------------------------------   "+aumento2[j].toFixed(2)+"<br>")
+document.write("<br>");
+document.write("<br>");
+
+    j++;
+}
+document.write("____________________________________________________________________________<br>");
+  </script>  
+
+      <!-- aquiiii -->
+      <nav>
+        <br>  
+        <br>
+            <a href="index.html">Volver al Menú Principal</a>
+        </br>    
+        </br>
+        </nav>
+
+        
+</body>
+</html>
